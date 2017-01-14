@@ -27,9 +27,8 @@ Created on Tue Jan 10 13:10:37 2017
 # limitations under the License.
 # ==============================================================================
 
-"""Predict the normalized ripple ratio for a network of neurons with varing amounts of DC input.
+"""Predict the next interspike interval (ISI) for a neuron by learning from previous ISIs.
 
-Network of biophysical neurons modified from Brunel and Wang (2003).
 Artificial neural network modified from the TensorFlow MNIST tutorial
 """
 # This artificial neural network predicts the next interspike interval (ISI)
