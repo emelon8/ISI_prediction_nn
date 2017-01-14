@@ -5,13 +5,6 @@ Created on Wed Jan 11 17:35:53 2017
 @author: eric
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jan 10 13:10:37 2017
-
-@author: eric
-"""
-
 # Copyright 2015 The TensorFlow Authors. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
