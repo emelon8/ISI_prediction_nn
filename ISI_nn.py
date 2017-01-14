@@ -35,7 +35,7 @@ import matplotlib.pyplot as plt
 from scipy.io import loadmat
 
 # load ripple ratio data
-data_all=loadmat('ISI') # loads the ISI (data is in seconds)
+data_all=loadmat('data/ISI') # loads the ISI (data is in seconds)
 input_nodes=10
 y_data_all=data_all['ISI'][input_nodes:]
 num_x=np.size(y_data_all)
@@ -74,8 +74,6 @@ for j in range(dataset_sizes):
 
     x_data_train=x_data_train[:int(len(x_data_train)-(1*j)),:] # decrease the number of training examples by 1 each time
     y_data_train=y_data_train[:int(len(y_data_train)-(1*j)),:]
-    x_data_test=x_data_test[:int(len(x_data_test)-(1*j)),:]
-    y_data_test=y_data_test[:int(len(y_data_test)-(1*j)),:]
 
     # Create the model
     input_nodes=len(x_data_all.T)
