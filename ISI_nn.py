@@ -45,6 +45,7 @@ x_data_all=np.zeros((num_x,input_nodes))
 for k in range(num_x):
     x_data_all[k,:]=np.reshape(data_all['ISI'][k:k+input_nodes],(input_nodes,))
 
+# feature scaling
 for p in range(input_nodes):
     x_data_all[:,p]=(x_data_all[:,p]-np.min(x_data_all[:,p]))/(np.max(x_data_all[:,p])-np.min(x_data_all[:,p]))
 
