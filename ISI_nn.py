@@ -36,7 +36,7 @@ from scipy.io import loadmat
 
 # load ripple ratio data
 data_all=loadmat('data/ISI') # loads the ISI (data is in seconds)
-input_nodes=10
+input_nodes=10 # the number of sequential ISIs to use in order to predict the next ISI
 y_data_all=data_all['ISI'][input_nodes:]
 num_x=np.size(y_data_all)
 x_data_all=np.zeros((num_x,input_nodes))
